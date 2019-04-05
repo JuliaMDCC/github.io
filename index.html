@@ -1,13 +1,19 @@
 <html>
  <head>
-  <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+  <!--<script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
   <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
   <script src='aframe-master.js'></script>
   <!--<script src='three.xr.js'></script>-->
-  <script src='aframe-xr.js'></script>
+  <script src='aframe-xr.js'></script>-->
+    !-- First, include whichever version of A-Frame you like. -->
+    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>    
+    <!-- Next, include three.ar.js; add the speech recognition polyfill if you want. -->
+    <script src="https://rawgit.com/google-ar/three.ar.js/f9603ee/dist/three.ar.js"></script>
+    <!-- Last, include aframe-ar. -->
+    <script src="https://rawgit.com/chenzlabs/aframe-ar/master/dist/aframe-ar.min.js"></script>    
  </head>
  <body>
-   <a-scene>
+   <a-scene ar>
      <!--<a-scene embedded arjs='sourceType: webcam;'>
        <a-marker preset="hiro">
           <a-box position='0 0.5 0' material="opacity: 0.5;"></a-box>
